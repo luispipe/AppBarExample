@@ -24,18 +24,16 @@ public class MainActivity extends AppCompatActivity {
                 replaceFragment(new HomeFragment());
             } else if (item.getItemId()==deleteId){
                 replaceFragment(new DeleteFragment());
-
             }else if (item.getItemId()==downloadId){
                 replaceFragment(new DownloadFragment());
             }
              return true;
-
         });
     }
 
     public void replaceFragment(Fragment fragment){
-        FragmentManager fragmento= getSupportFragmentManager();
-        FragmentTransaction transaction= fragmento.beginTransaction();
+        FragmentManager fragmentManager= getSupportFragmentManager();
+        FragmentTransaction transaction= fragmentManager.beginTransaction();
         transaction.replace(R.id.botton_nav_frame,fragment);
         transaction.commit();
     }

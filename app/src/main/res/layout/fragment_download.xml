@@ -10,6 +10,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:fontFamily="@font/handjet_light"
         android:text="Download"
         android:textAlignment="center"
         android:textSize="24sp" />
